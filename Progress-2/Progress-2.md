@@ -3,7 +3,7 @@
 - Buat Database
 - Buka project menggunakan VSCode 
 - Pada file .env atur sesuai Database
-    ![image](https://user-images.githubusercontent.com/106764628/178333949-a836eefd-c3e1-4938-b580-53fcfc3782db.png)
+![image](https://user-images.githubusercontent.com/106764628/178333949-a836eefd-c3e1-4938-b580-53fcfc3782db.png)
 - Membuat File Migration `php artisan make:migration create_rss_table` , `php artisan make:migration create_news_table`
 - Buka file yg telah dibuat tadi "database\migrations\create_news_table.php, create_news_table.php" lalu isikan sesuai yg diinginkan
 - Jika sudah selesai selanjutnya buka terminal di VSCode lalu ketikan `php artisan migrate:fresh`
@@ -14,7 +14,7 @@
 - Lanjut membuat rss Seed Controler `php artisan make:model Rss --seed --controller`
 - Kemudian buka Foler Model lalu isikan pada "Rss.php" dan "News.php" sesuai keinginan
 - Jika sudah selasai semua maka selanjutnya ketik perintah ini 
-`php artisan migrate:fresh
-php artisan migrate:seed
-php artisan serve` 
+`php artisan migrate:fresh`
+`php artisan migrate:seed`
+`php artisan serve` 
 Pada php artisan serve nanti akan ada IP yg akan muncul kemudian Copy Paste pada web browser anda

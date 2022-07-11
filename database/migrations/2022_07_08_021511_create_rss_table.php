@@ -13,9 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('table_biodata', function (Blueprint $table) {
+        Schema::create('rss', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('url');
             $table->timestamps();
+            
+
+           
+            
         });
     }
 
@@ -26,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_biodata');
+        Schema::dropIfExists('rss');
     }
 };

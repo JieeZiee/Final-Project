@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/feed/{rss_id}'[NewsController::class, 'aggregrate']);
+Route::get('/aggregrate/{rss_id}', 
+[NewsController::class, 'aggregrate']);
